@@ -4,6 +4,10 @@ const lost = document.getElementById("lost");
 let countDead = 0;
 let countLost = 0;
 
+export default function demo(value) {
+  return `Demo: ${value}`;
+}
+
 for (let index = 1; index < 10; index++) {
   const getHole = (index) => document.getElementById(`hole${index}`);
   let data = getHole(index);
