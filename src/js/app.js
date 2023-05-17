@@ -11,6 +11,7 @@ for (let index = 1; index < 10; index++) {
   data.onclick = () => {
     if (data.classList.contains("hole_has-mole")) {
       dead.textContent = Number(dead.textContent) + 1;
+      console.log(data);
       countDead++;
     } else {
       lost.textContent = Number(lost.textContent) + 1;
